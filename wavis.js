@@ -196,7 +196,7 @@ A Node script to plot equations as ASCII text.
 Basic Usage
 -----------
 $ node wavis.js -v        The ${WAVIS.NAME} version
-$ node wavis.js y         A single plot
+$ node wavis.js x         A single plot
 $ node wavis.js -0.3 x/2  Superimpose 2 plots:
 
 +1.0 . . . . . . . . . . | . . . . . . . . . .
