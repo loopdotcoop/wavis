@@ -1,6 +1,6 @@
 {
   "name": "wavis",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Plot equations as ASCII text, in Node or the browser",
   "main": "wavis.js",
   "scripts": {

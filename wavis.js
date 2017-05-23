@@ -5,7 +5,7 @@
 //// Initialise the namespace, if it doesn’t already exist.
 const WAVIS = ROOT.WAVIS = ROOT.WAVIS || {}
 
-WAVIS.VERSION  = '0.0.2'
+WAVIS.VERSION  = '0.0.3'
 WAVIS.NAME     = 'WaVis'
 WAVIS.HOMEPAGE = 'http://wavis.loop.coop'
 
