@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WaVis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plot equations as ASCII text.">
+
+  <!-- Usage: `LERT("Some alert message here!")` -->
+  <script>!function(s){var A='addEventListener',L='LERT',S='setAttribute',t=top,
+  w=this,d=document,u=navigator.userAgent,n=0,p,i,c,e=function(m,f,l){if(l!=+l)l
+  =m.lineno,f=m.filename,m=m.message;for(i=0,c=w;c=c[['LIFE','pop','is','ready']
+  [i++]];);(4<i&&w.LIFE.pop.warn||t[L])((f+':'+l).match(/[^\/]+?\/?[^\/]+$/)[0]+
+  '\n'+m)};/efox\/(\d|[1-2]\d)\.|Prest/.test(u)?w.onerror=e:!/SIE 9/.test(u)&&w[
+  A]?w[A]('error',e,0):w.attachEvent('onerror',e);w[L]=t[L]=t[L]||function(h){h=
+  98<++n?'99!':n+' '+h;99<n?0:d.body?(p=d.createElement('TT'),p.innerHTML=h,(p.
+  style[S]?p.style[S]('cssText',s):p[S]('style',s)),p.onclick=function(){d.body.
+  removeChild(this)},d.body.appendChild(p)):alert(h)}}('position:fixed!importa'+
+  'nt;position:absolute;display:block;top:40%;left:5%;width:90%;font-size:14px'+
+  ';padding:9px;margin-left:-9px;background:tan;color:#033;z-index:99')</script>
+
+  <link href="asset/wavis.css" rel="stylesheet">
+
+  <!-- Main app -->
+  <script src="wavis.js"></script>
+
+</head>
+<body>
+
+  <!-- Upgrade message for Internet Explorer 9 and below -->  <!--[if lte IE 9]>
+  <h2>Upgrade to a <a href="//goo.gl/KpAuN1">modern browser<a/></h2><![endif]-->
+  <!-- Begin hiding from IE 9 and below -->        <!--[if gt IE 9 | !IE ]><!-->
+  <script>if(/Trident\//.test(navigator.userAgent))document.write('<h2>Upgrade '
+  +'to a <a href="//goo.gl/KpAuN1">modern browser<a/></h2><!--')//IE10+</script>
+
+  <nav>
+    <a href="https://github.com/loopdotcoop/wavis">WaVis</a>
+    <a href="http://wavis.loop.coop/">Usage Example</a>
+  </nav>
+
+  <pre></pre>
+
+  <!-- Init the app -->
+  <script>
+if (! window.WAVIS) throw Error('App namespace not found')
+var graph = WAVIS.init({ // defined in wavis.js
+})
+graph.add('Constant', '-0.3')
+graph.add('Linear',   'x / 2')
+document.querySelector('pre').innerHTML = graph.render()
+
+  </script>
+
+</body>
+</html>

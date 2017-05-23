@@ -1,0 +1,35 @@
+/*
+//// WaVis //// 0.0.* //// May 2017 //// http://wavis.loop.coop ////////////////
+*/
+
+html {
+    background: #333;
+    color:      #eee;
+    font: 125% Arial, serif; /* 1rem = 20px */
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    right: 1em;
+    text-align: right;
+}
+nav >span,
+nav >a {
+    display: block;
+    padding-left: 1em;
+    text-decoration: none;
+}
+
+a {
+    color: #FFF;
+    outline: none;
+    transition: color 0.3s;
+}
+a:hover,
+a:focus {
+    color: #CF9;
+}
